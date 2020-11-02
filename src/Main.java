@@ -1,5 +1,5 @@
 import child.*;
-import parent.Range;
+//import parent.Range;
 
 import static parent.Range.*;
 
@@ -14,7 +14,7 @@ public class Main {
                 new Developer("I am Senior Developer", SENIOR),
                 new Developer("I am Middle Developer", MIDDLE),
                 new Developer("I am Teamlead Developer", TEAMLEAD)};
-
+             printDeveloperGrade(developers);
 /* for (Developer java : developers) {
             java.printDeveloperGrade();
         }*/
@@ -22,9 +22,10 @@ public class Main {
 
     }
 
-    public  static void printDeveloperGrade (Developer developers){
+    public  static void printDeveloperGrade (Developer[] developers){
+        for (Developer java : developers) {
             //Developer developers = new Developer(Range.JUNIOR);
-    switch (developers.getRange()) {
+    switch (java.getRange()) {
         case JUNIOR:
             //developers.printDeveloperGrade("I am junior developer");
             System.out.println("I am junior developer");
@@ -42,7 +43,7 @@ public class Main {
             System.out.println("THE END");
             break;
     }
-            
+        }     
         }
 
     }
