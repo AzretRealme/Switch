@@ -6,7 +6,7 @@ public class Developer extends Abstract{
         private String name;
         private Range range;
 
-       public Developer(Range range) {
+       public Developer() {
 
         }
         public Developer(String name, Range range) {
@@ -29,8 +29,6 @@ public class Developer extends Abstract{
         public void setName(String name) {
             this.name = name;
         }
-
-    @Override
 
         public void printDeveloperGrade(){
             System.out.println(name);
